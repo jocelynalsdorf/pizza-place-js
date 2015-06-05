@@ -27,3 +27,24 @@ function Pizza(toppings, size, orderName) {
 Pizza.prototype.finalPrice = function(quantity) {
   return this.price() * quantity;
 }
+
+
+$(document).ready(function(){
+
+  $("form#new-pizza").submit(function(event){
+    event.preventDefault();
+
+    var pizzaType = $('input[name="pizza-type"]:checked').val();
+    var pizzaSize = $('input[name="pizza-size"]:checked').val();
+    var orderName = $("input#first-name").val();
+    var howManyPizzas = parseInt($("input#how-many").val());
+
+    var newPizza = new Pizza(pizzaType, pizzaSize, orderName);
+
+    var totalDue = newPizza.finalPrice(howManyPizzas);
+    alert(totalDue);
+  });
+
+
+
+});
