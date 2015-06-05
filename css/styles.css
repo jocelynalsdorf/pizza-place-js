@@ -3,12 +3,26 @@
   margin-bottom: 15px;
   width:100%;
 }
-
-h2 {
-  margin:0;
+h1 {
+  text-align: center;
 }
 
+h3 {
+  margin-top:3px;
+}
+
+h1, h3 {
+  font-family: 'Chewy', cursive;
+}
 div #show-order {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.persons-info {
+  font-family: 'Chewy', cursive;
+
+}
+span {
+  color: #555;
 }

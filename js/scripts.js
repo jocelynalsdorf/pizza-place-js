@@ -42,7 +42,10 @@ $(document).ready(function(){
     var newPizza = new Pizza(pizzaType, pizzaSize, orderName);
 
     var totalDue = newPizza.finalPrice(howManyPizzas);
-    alert(totalDue);
+
+    $(".first-name").text(orderName);
+    $(".pizza-order").text(howManyPizzas + " " + pizzaSize + " " + pizzaType + " " + " pizza/pizzas");
+    $(".total-due").text("$" + totalDue);
   });
 
 

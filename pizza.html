@@ -3,6 +3,7 @@
   <head>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/scripts.js"></script>
     <title>Pizza Parlor</title>
@@ -12,7 +13,7 @@
     <h1>Kewl Pizza Party Headquarters</h1>
       <div class-"col-md-6">
         <div class="row">
-          <div class="alert alert-info">
+          <div class="alert alert-success">
             <h3>Step 1: What toppings?</h3>
 
             <form id="new-pizza">
@@ -42,7 +43,7 @@
 
       <div class="row">
        <div class-"col-md-6">
-        <div class="alert alert-info">
+        <div class="alert alert-success">
           <h3>Step 2: What size?</h3>
           <div>
             <label for="small" class="radio-inline">
@@ -56,7 +57,7 @@
           </div>
         </div>
 
-        <div class="alert alert-info">
+        <div class="alert alert-success">
           <h3>Step 3: How many pizzas?</h3>
             <div class="form-group"></label>
               <input type="text" class="form-control" id="how-many" placeholder="enter a number">
@@ -65,24 +66,24 @@
 
       <div class="row">
         <div class="col-md-6">
-          <div class="alert alert-info">
+          <div class="alert alert-success">
             <h3>Step 4: What's your name?</h3>
             <div class="form-group">
                 <input type="text" class="form-control" id="first-name" placeholder="enter your first name">
             </div>
           </div>
 
-            <button type="submit" class="btn btn-stretch">Order this Dang Pizza!</button>
+            <button type="submit" class="btn btn-danger">Order this Dang Pizza!</button>
           </form>
         </div>
 
         <div class="row">
-          <div class="col-md-6 floaty">
-            <div id="show-order" class="alert alert-info">
-             <h2>Order Details:</h2>
+          <div class="col-md-6 persons-info">
+            <div id="show-order" class="alert alert-danger">
+             <h3>Order Details:</h3>
               <p>Name: <span class="first-name"></span></p>
               <p>Your Order: <span class="pizza-order"></span></p>
-              <p>Total Due: $<span class="total-due"></span></p>
+              <p>Total Due: <span class="total-due"></span></p>
             </div>
           </div>
         </div>
