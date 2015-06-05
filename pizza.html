@@ -5,17 +5,17 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Kewl Pizza Parlor</title>
+    <title>Pizza Parlor</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Kewl Pizza Party Headquarters</h1>
-      <div class="col-md-6">
+  <div class="container">
+    <h1>Kewl Pizza Party Headquarters</h1>
+      <div class-"col-md-6">
         <div class="row">
           <div class="alert alert-info">
-          <h2>What toppings?</h2>
+            <h3>Step 1: What toppings?</h3>
 
-          <form id="new-pizza">
+            <form id="new-pizza">
             <div>
               <label for="cheese" class="radio-inline">
                 <input type="radio" name="pizza-type" value="cheese" id="cheese">cheese
@@ -28,38 +28,67 @@
             </div>
             <div>
               <label for="mushroom" class="radio-inline">
-                <input type="radio" name="pizza-type" value="mushroom" id="mushroom">mushroom
+                <input type="radio" value="mushroom" name="pizza-type"  id="mushrooms">Mushroom
               </label>
             </div>
             <div>
               <label for="veggie" class="radio-inline">
-                <input type="radio" name="pizza-type" value="veggie" id="veggie">veggie
+                <input type="radio" name="pizza-type"  value="veggie" id="veggie">Veggie
               </label>
             </div>
+        </div>
       </div>
+    </div>
+
+      <div class="row">
+       <div class-"col-md-6">
+        <div class="alert alert-info">
+          <h3>Step 2: What size?</h3>
+          <div>
+            <label for="small" class="radio-inline">
+             <input type="radio" name="pizza-size" value="small" id="small">small
+            </label>
+          </div>
+          <div>
+           <label for="large" class="radio-inline">
+             <input type="radio" name="pizza-size" value="large" id="large">large
+            </label>
+          </div>
+        </div>
+
+        <div class="alert alert-info">
+          <h3>Step 3: How many pizzas?</h3>
+            <div class="form-group"></label>
+              <input type="text" class="form-control" id="how-many" placeholder="enter a number">
+            </div>
+        </div>
+
       <div class="row">
         <div class="col-md-6">
           <div class="alert alert-info">
-          <h2>What Size?</h2>
-            <div>
-              <label for="small" class="radio-inline">
-              <input type="radio" name="pizza-size" value="small" id="small">small
-              </label>
+            <h3>Step 4: What's your name?</h3>
+            <div class="form-group">
+                <input type="text" class="form-control" id="first-name" placeholder="enter your first name">
             </div>
-            <div>
-              <label for="large" class="radio-inline">
-              <input type="radio" name="pizza-size" value="large" id="large">large
-              </label>
+          </div>
+
+            <button type="submit" class="btn btn-stretch">Order this Dang Pizza!</button>
+          </form>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 floaty">
+            <div id="show-order" class="alert alert-info">
+             <h2>Order Details:</h2>
+              <p>Name: <span class="first-name"></span></p>
+              <p>Your Order: <span class="pizza-order"></span></p>
+              <p>Total Due: $<span class="total-due"></span></p>
             </div>
           </div>
         </div>
+
       </div>
-
-          </form>
-
-
-        </div>
-      </div>
-
+    </div>
+   </div>
   </body>
 </html>
