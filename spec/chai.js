@@ -5315,4 +5315,18 @@ module.exports = function (obj) {
   var str = Object.prototype.toString.call(obj);
   if (natives[str]) return natives[str];
   if (obj === null) return 'null';
-  if (obj =
+  if (obj === undefined) return 'undefined';
+  if (obj === Object(obj)) return 'object';
+  return typeof obj;
+};
+
+});
+
+if (typeof exports == "object") {
+  module.exports = require("chai");
+} else if (typeof define == "function" && define.amd) {
+  define("chai", [], function(){ return require("chai"); });
+} else {
+  (this || window)["chai"] = require("chai");
+}
+})()
