@@ -48,6 +48,4 @@ $(document).ready(function(){
     $(".total-due").text("$" + totalDue);
   });
 
-
-
 });
