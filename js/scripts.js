@@ -23,3 +23,7 @@ function Pizza(toppings, size, orderName) {
   	return totalPrice;
   	}
   }
+
+Pizza.prototype.finalPrice = function(quantity) {
+  return this.price() * quantity;
+}
