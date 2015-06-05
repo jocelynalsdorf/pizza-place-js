@@ -45,7 +45,7 @@ describe('Pizza', function() {
     expect(testPizza.price()).to.equal(13);
   });
 
-  it('determines the price of 1 pizza with teh given specifications', function(){
+  it('determines the price of 1 pizza with the given specifications', function(){
     var testPizza = new Pizza("veggie", "small", "Joss");
     expect(testPizza.price()).to.equal(12);
   });
@@ -55,6 +55,20 @@ describe('Pizza', function() {
     expect(testPizza.price()).to.equal(13);
   });
 
+  it('determines the price of 2 pizzas with the given specifications', function (){
+    var testPizza = new Pizza("mushroom", "large", "Chris");
+    expect(testPizza.finalPrice(2)).to.equal(26);
+  });
+
+  it('determines the price of 3 pizzas with the given specifications', function (){
+    var testPizza = new Pizza("cheese", "small", "Ian");
+    expect(testPizza.finalPrice(3)).to.equal(24);
+  });
+
+  it('determines the price of 4 pizzas with the given specifications', function (){
+    var testPizza = new Pizza("pepperoni", "large", "Garrett");
+    expect(testPizza.finalPrice(4)).to.equal(44);
+  });
 
 
 });
