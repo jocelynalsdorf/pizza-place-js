@@ -1,4 +1,4 @@
-#Kewl Pizza Party Headquartes
+#Kewl Pizza Party Headquarters
 <h3>Author:</h3>
 Jocelyn Alsdorf
 
